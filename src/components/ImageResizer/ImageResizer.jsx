@@ -27,7 +27,9 @@ const ImageResizer = () => {
           const downloadLink = document.createElement("a");
           downloadLink.href = resizedImage;
           downloadLink.download = `resized_image_${width}x${height}.jpg`;
+          document.body.appendChild(downloadLink); // Добавляем ссылку в DOM
           downloadLink.click();
+          document.body.removeChild(downloadLink); // Удаляем ссылку из DOM после скачивания
         };
         img.src = e.target.result;
       };
