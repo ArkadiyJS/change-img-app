@@ -5,6 +5,9 @@ const ImageResizer = () => {
   const width = 600;
   const height = 415;
 
+
+
+
   const handleImageUpload = (e) => {
     const files = Array.from(e.target.files);
     setImages(files);
@@ -37,20 +40,27 @@ const ImageResizer = () => {
     });
   };
 
+
+
+
   return (
-    <div>
-      <input type="file" multiple onChange={handleImageUpload} />
-      <div>
-        <label>Ширина (в пикселях):</label>
-        <div   >{width} </div>
-      </div>
-      <div>
-        <label>Высота (в пикселях):</label>
-        <div  >{height} </div >
+    <div className="content">
+      <h1>Change img</h1>
+      <input className='button' type="file" multiple onChange={handleImageUpload} />
+      <div className='button'>
+        <label>Ширина (в пикселях): {width}</label>
 
       </div>
-      <button onClick={handleResize}>Изменить размер и скачать</button>
-    </div>
+
+      <div className='button'>
+        <label >Высота (в пикселях): {height} </label>
+
+
+      </div>
+
+
+      <button className='button' onClick={handleResize}>Изменить размер и скачать</button>
+    </div >
   );
 };
 
