@@ -45,7 +45,7 @@ const ImageResizer = () => {
 
   return (
     <div className="content">
-      <h1>Change img</h1>
+      <h1 className="logo">Change img</h1>
       <input className='button' type="file" multiple onChange={handleImageUpload} />
       <div className='button'>
         <label>Ширина (в пикселях): {width}</label>

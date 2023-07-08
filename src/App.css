@@ -26,3 +26,7 @@
   padding: 10px;
   background: var(--secondary);
 }
+
+.logo {
+  filter: drop-shadow(3px 3px 10px rgb(238, 97, 2));
+}
