@@ -10,10 +10,12 @@ const ImageResizer = () => {
 
   const handleImageUpload = (e) => {
     const files = Array.from(e.target.files);
+    
     setImages(files);
   };
 
   const handleResize = () => {
+    
     images.forEach((image) => {
       const reader = new FileReader();
       reader.onload = (e) => {
@@ -59,7 +61,7 @@ const ImageResizer = () => {
       </div>
 
 
-      <button className='button' onClick={handleResize}>Изменить размер и скачать</button>
+      <button className='button' disabled={images == false} onClick={handleResize }>Изменить размер и скачать</button>
     </div >
   );
 };
