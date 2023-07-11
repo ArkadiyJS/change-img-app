@@ -63,7 +63,7 @@ const ImageResizer = () => {
       </div>
 
 
-      <button className='button' disabled={images == false} onClick={handleResize}>Изменить размер и скачать</button>
+      <button className='button' disabled={images.length === 0} onClick={handleResize}>Изменить размер и скачать</button>
     </div >
   );
 };
