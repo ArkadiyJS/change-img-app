@@ -35,7 +35,7 @@ const ImageResizer = () => {
           // Создаем ссылку на скачивание измененного изображения
           const downloadLink = document.createElement("a");
           downloadLink.href = resizedImage;
-          downloadLink.download = `resized_image_${width}x${height}#${countPhoto++}.jpg`;
+          downloadLink.download = `resized_image_${width}x${height}#${countPhoto + 1}.jpg`;
           document.body.appendChild(downloadLink); // Добавляем ссылку в DOM
           downloadLink.click();
           document.body.removeChild(downloadLink); // Удаляем ссылку из DOM после скачивания
