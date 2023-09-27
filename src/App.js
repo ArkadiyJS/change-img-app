@@ -4,7 +4,7 @@ import ImageResizer from './components/ImageResizer/ImageResizer';
 
 function App() {
   return (
-    <div className="container">
+    <div className="container">ф
 
       <ImageResizer />
     </div>
