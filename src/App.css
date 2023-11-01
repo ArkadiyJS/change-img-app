@@ -30,7 +30,15 @@
 .logo {
   filter: drop-shadow(3px 3px 10px rgb(238, 97, 2));
 }
-.button:disabled{
+
+.button:disabled {
   opacity: 0.6;
   cursor: not-allowed;
+}
+
+.button1 {
+  flex-grow: 1;
+  padding: 10px;
+  background: var(--secondary);
+  width: 100px;
 }

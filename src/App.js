@@ -1,12 +1,16 @@
 
 import './App.css';
-import ImageResizer from './components/ImageResizer/ImageResizer';
+
+import ImageEditor from './components/imageChange/imageChange';
 
 function App() {
   return (
     <div className="container">
 
-      <ImageResizer />
+      <ImageEditor />
+
+
+
     </div>
   );
 }
