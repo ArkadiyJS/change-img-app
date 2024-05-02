@@ -44,32 +44,3 @@
   background: var(--secondary);
   width: 100px;
 }
-
-.chic {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  height: 80px;
-  width: 80px;
-  background: #FFFFFF;
-  border-radius: 50%;
-}
-
-.chic:active {
-  transform: scale(0.8);
-}
-
-.camera {
-  width: 360px;
-  height: 720px;
-  margin: 0 auto;
-  object-fit: cover;
-
-
-
-}
-
-.video {
-  width: 360px;
-  height: 720px;
-}
