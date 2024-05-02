@@ -9,7 +9,7 @@ function App() {
     <div className="container">
 
       {/* <ImageEditor /> */}
-
+      <div> 123</div>
       <CameraApp />
 
     </div>
